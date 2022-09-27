@@ -190,7 +190,7 @@ export default function Home() {
         provider
       );
       // Get all the tokens that have been minted
-      const _tokensMinted = await tokenContract.totalSupply();
+      const tokensMinted = await tokenContract.totalSupply();
       setTokensMinted(tokensMinted);
     } catch (err) {
       console.error(err);
